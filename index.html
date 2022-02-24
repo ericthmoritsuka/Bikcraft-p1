@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bikcraft</title>
+</head>
+
+<body>
+
+  <!-- vou criar um header primeiro onde vai ficar a barra de menu e o logo -->
+  <header>
+    <img src="./img/bikcraft.svg" alt="Logo bikcraft">
+
+    <!-- O menu vai vir dentro de um NAV que vai ter uma lista (ul) dentro dela. NAV é um landmark que vai indicar elementos de navegação. Cada elemento (li) da lista vai conter um link (a) -->
+    <nav aria-label="principal">
+      <ul class="menu">
+        <li><a href="/">sobre</a></li>
+        <li><a href="/">produtos</a></li>
+        <li><a href="/">lojas</a></li>
+        <li><a href="/">contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Aqui eu vou criar o main que é onde a informação principal da página vai estar. Nesse caso, vou separar a informação toda em dois articles. O de cima e o de baixo.-->
+
+  <main>
+    <!-- Dentro desse article eu vou incluir um div que vai ter o titulo, texto descrevendo a bicicleta, botão e, fora da div a foto da bicicleta. É preciso lembrar que aqui iremos usar um pseudomarcador ::before ou ::after para incluir o elemento que fica sobre as duas seções -->
+    <!-- Aqui nós usamos a class conteudo nos dois articles para que eles fiquem separados igualmente quando formos montar o grid. Usamos aria-labelledby porque temos um título dentro que contém uma id e, para não repetirmos o mesmo titulo no assistente virtual, usamos isso-->
+    <article class="conteudo" aria-labelledby="label-descricao">
+      <div class="descricao">
+        <h1 id="label-descricao">Bicicletas feitas a mão</h1>
+        <p>A Nimbus Stark é a melhor Bikcraft já criada pela nossa equipe. Ela vem equipada com os melhores acessórios da marca.</p>
+        <a class="botao" href="/">VER MAIS</a>
+      </div>
+      <div class="foto">
+      <img src="./img/bicicleta.jpg" alt="Bicicleta Bickraft Nimbus Stark">
+      </div>
+    </article>
+
+    <!-- Esse article vai conter os próximos blocos. Um texto grande à esquerda e uma lista com itens com vários elementos dentro, uma imagem, um titulo e um texto. -->
+    <article class="conteudo-vantagem" aria-labelledby="label-vantagens">
+      <h2 class="subtitulo" id="label-vantagens">VANTAGENS BIKCRAFT</h2>
+      <ul class="vantagens-caixa">
+        <li class="vantagem-item">
+          <img src="./img/eletrica.svg" alt="">
+          <h3>Motor Elétrico</h3>
+          <p>Permite você viajar distâncias inimagináveis com a sua bike.</p>
+        </li>
+        <li class="vantagem-item">
+          <img src="./img/velocidade.svg" alt="">
+          <h3>40 km/h</h3>
+          <p>A mais rápida bicicleta elétrica disponível hoje no mercado.</p>
+        </li>
+        <li class="vantagem-item">
+          <img src="./img/rastreador.svg" alt="">
+          <h3>Rastreador</h3>
+          <p>Rastreador e sistema anti-furto para garantir o seu sossego.</p>
+        </li>
+      </ul>
+    </article>
+
+  </main>
+
+</body>
+
+<!-- fora do body eu vou criar o footer onde teremos a informação do rodapé da página -->
+
+<footer>
+  <p>Bikcraft. Alguns Direitos Reservados.</p>
+</footer>
+
+</html>
