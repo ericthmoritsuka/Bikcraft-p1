@@ -112,7 +112,8 @@ header {
 }
 
 .botao {
-  display: inline;
+  display: grid;
+  justify-content: center;
   background-color: var(--primaria);
   padding: 1rem 2rem;
   color: var(--texto);
