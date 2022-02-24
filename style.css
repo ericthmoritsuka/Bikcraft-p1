@@ -5,6 +5,7 @@
   --bg-alt: #fff;
   --texto: #000;
   --texto-alt: rgba(0,0,0,0.2);
+  --onda: url(./img/onda-clara.svg);
 }
 
 body {
@@ -129,7 +130,7 @@ header {
   align-self: center;
   font-size: 4rem;
   color: var(--texto-alt);
-  background-image: url(./img/onda.svg);
+  background-image: var(--onda);
   padding: 40px;
 }
 
@@ -164,6 +165,7 @@ footer {
   text-align: center;
   padding: 40px;
   box-sizing: border-box;
+  color: var(--texto);
 }
 
 @media (max-width:1000px) {
@@ -205,11 +207,8 @@ footer {
     --bg: #292929;
     --bg-alt: #121212;
     --texto: #E1E1E1;
-    --texto-alt: #fff;
-  }
-
-  .subtitulo{
-    background-image: none;
+    --texto-alt: rgba(255,255,255,0.2);
+    --onda: url(./img/onda-escura.svg);
   }
 
 }
