@@ -118,6 +118,7 @@ header {
   color: var(--texto);
   border-radius: 4px;
   text-transform: uppercase;
+  min-width: 8ch;
 }
 
 .botao:hover {
